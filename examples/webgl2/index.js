@@ -28,7 +28,7 @@ function main() {
   effekseer.initRuntime("../effekseer/effekseer-webgl.wasm", () => {
     const context = effekseer.createContext();
     context.init(gl);
-    context.setRestorationOfStatesFlag(false);
+    context.setRestorationOfStatesFlag(true);
 
     resizeCanvas(gl, context);
     context.setCameraLookAt(0, 0, 20, 0, 0, 0, 0, 1, 0);
