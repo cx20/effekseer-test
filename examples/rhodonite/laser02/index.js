@@ -19,7 +19,6 @@ const load = async function () {
 
   window.addEventListener('resize', () => engine.resizeCanvas(window.innerWidth, window.innerHeight));
 
-  // Background render pass (no entities — just clears to dark color)
   const renderPass = new Rn.RenderPass(engine);
   renderPass.toClearColorBuffer = true;
   renderPass.toClearDepthBuffer = true;
@@ -28,13 +27,12 @@ const load = async function () {
   const expression = new Rn.Expression(engine);
   expression.addRenderPasses([renderPass]);
 
-  // Get the WebGL context Rhodonite created (returns the same context)
   const gl = canvas.getContext('webgl2');
 
   let effekseerContext = null;
 
   await new Promise((resolve, reject) => {
-    effekseer.initRuntime('../effekseer/effekseer-webgl.wasm', () => {
+    effekseer.initRuntime('../../effekseer/effekseer-webgl.wasm', () => {
       effekseerContext = effekseer.createContext();
       effekseerContext.init(gl);
       effekseerContext.setRestorationOfStatesFlag(true);
@@ -42,7 +40,7 @@ const load = async function () {
       effekseerContext.setCameraLookAt(0, 14, 14, 0, 0, 0, 0, 1, 0);
 
       const effect = effekseerContext.loadEffect(
-        '../effekseer/Resources/Laser01.efk',
+        '../../effekseer/Resources/Laser02.efk',
         1.0,
         () => {
           setStatus('Click to play');
