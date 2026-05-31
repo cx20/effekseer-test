@@ -45,3 +45,11 @@ Each complex sample loads all four effects and provides a dedicated play button 
 | PlayCanvas (WebGL)   | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas/complex/) |
 | PlayCanvas (WebGPU)  | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas-webgpu/complex/) |
 | Filament (WebGL) 🚧  | [Link](https://cx20.github.io/effekseer-test/examples/filament/complex/) |
+
+## EffectMaterials Samples
+
+Effects from [effekseer/EffectMaterials](https://github.com/effekseer/EffectMaterials) (CC0 license).
+
+| Library | ef_fire01 | ef_lightning01 | ef_holy01 | ef_parts_hit01 |
+|:--------|:---------:|:--------------:|:---------:|:--------------:|
+| WebGPU  | [Link](https://cx20.github.io/effekseer-test/examples/webgpu/ef_fire01/) | [Link](https://cx20.github.io/effekseer-test/examples/webgpu/ef_lightning01/) | [Link](https://cx20.github.io/effekseer-test/examples/webgpu/ef_holy01/) | [Link](https://cx20.github.io/effekseer-test/examples/webgpu/ef_parts_hit01/) |
