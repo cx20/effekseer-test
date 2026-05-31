@@ -1,5 +1,5 @@
 import Rn from 'rhodonite';
-import { createContext, getLastWebGPUError, initRuntime } from '../effekseer/effekseer.js';
+import { createContext, getLastWebGPUError, initRuntime } from '../../effekseer/effekseer.js';
 
 const rhodoniteCanvas = document.getElementById('world');
 const effekseerCanvas = document.getElementById('canvas');
@@ -36,7 +36,6 @@ const load = async function () {
 
   window.addEventListener('resize', () => engine.resizeCanvas(window.innerWidth, window.innerHeight));
 
-  // Background render pass (no entities — just clears to dark color)
   const renderPass = new Rn.RenderPass(engine);
   renderPass.toClearColorBuffer = true;
   renderPass.toClearDepthBuffer = true;
@@ -49,8 +48,8 @@ const load = async function () {
 
   await initRuntime({
     backend: 'webgpu',
-    scriptPath: '../effekseer/effekseer-webgpu.js',
-    wasmPath: '../effekseer/effekseer-webgpu.wasm',
+    scriptPath: '../../effekseer/effekseer-webgpu.js',
+    wasmPath: '../../effekseer/effekseer-webgpu.wasm',
   });
 
   const canvasContext = effekseerCanvas.getContext('webgpu');
@@ -67,14 +66,13 @@ const load = async function () {
     enablePremultipliedAlpha: true,
   });
 
-  const effect = await context.loadEffect('../effekseer/Resources/00_Basic/Laser01.efkefc');
+  const effect = await context.loadEffect('../../effekseer/Resources/00_Basic/Laser02.efkefc');
   context.setProjectionPerspective(45, window.innerWidth / window.innerHeight, 0.1, 1000);
   context.setCameraLookAt(0, 14, 14, 0, 0, 0, 0, 1, 0);
 
-  // efkefc has no embedded audio; load the sound via Web Audio API
   const audioCtx = new AudioContext();
   let soundBuffer = null;
-  fetch('../effekseer/Resources/Sound/Laser.wav')
+  fetch('../../effekseer/Resources/Sound/Laser.wav')
     .then(r => r.arrayBuffer())
     .then(buf => audioCtx.decodeAudioData(buf))
     .then(decoded => { soundBuffer = decoded; })
