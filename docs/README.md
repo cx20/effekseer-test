@@ -21,6 +21,22 @@ This folder contains technical documentation for the sample implementations in t
 
 > ※ `block` has no compiled `.efkefc` version; all backends load the `.efk` file.
 
+### EffectMaterials Resources (CC0)
+
+From [effekseer/EffectMaterials](https://github.com/effekseer/EffectMaterials). All files are `.efkefc` (WebGPU).
+
+| Effect | Path |
+|--------|------|
+| ef_fire01 | `Resources/EffectMaterials/ef_fire01.efkefc` |
+| ef_lightning01 | `Resources/EffectMaterials/ef_lightning01.efkefc` |
+| ef_holy01 | `Resources/EffectMaterials/ef_holy01.efkefc` |
+| ef_parts_hit01 | `Resources/EffectMaterials/ef_parts_hit01.efkefc` |
+| ef_fire02, ef_fire03 | `Resources/EffectMaterials/ef_fire0[23].efkefc` |
+| ef_ice01〜03 | `Resources/EffectMaterials/ef_ice0[123].efkefc` |
+| ef_lightning02, ef_lightning03 | `Resources/EffectMaterials/ef_lightning0[23].efkefc` |
+| ef_parts_hit02 | `Resources/EffectMaterials/ef_parts_hit02.efkefc` |
+| ef_wind01〜03 | `Resources/EffectMaterials/ef_wind0[123].efkefc` |
+
 ### Framework Integration Summary
 
 | Framework | Backend | Canvas | Effekseer API | Draw method |
