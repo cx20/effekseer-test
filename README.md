@@ -10,6 +10,8 @@ Each sample includes:
 
 The supported rendering API and framework combinations are shown in the table below.
 
+> 🚧 = Work In Progress (known issues remain)
+
 ## Samples
 
 | Library | Laser01 | Laser02 | Simple_Ring_Shape1 | block |
@@ -24,7 +26,7 @@ The supported rendering API and framework combinations are shown in the table be
 | Rhodonite (WebGPU)   | [Link](https://cx20.github.io/effekseer-test/examples/rhodonite-webgpu/laser01/) | [Link](https://cx20.github.io/effekseer-test/examples/rhodonite-webgpu/laser02/) | [Link](https://cx20.github.io/effekseer-test/examples/rhodonite-webgpu/simple_ring_shape1/) | [Link](https://cx20.github.io/effekseer-test/examples/rhodonite-webgpu/block/) |
 | PlayCanvas (WebGL)   | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas/laser01/) | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas/laser02/) | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas/simple_ring_shape1/) | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas/block/) |
 | PlayCanvas (WebGPU)  | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas-webgpu/laser01/) | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas-webgpu/laser02/) | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas-webgpu/simple_ring_shape1/) | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas-webgpu/block/) |
-| Filament (WebGL)     | [Link](https://cx20.github.io/effekseer-test/examples/filament/laser01/) | [Link](https://cx20.github.io/effekseer-test/examples/filament/laser02/) | [Link](https://cx20.github.io/effekseer-test/examples/filament/simple_ring_shape1/) | [Link](https://cx20.github.io/effekseer-test/examples/filament/block/) |
+| Filament (WebGL) 🚧  | [Link](https://cx20.github.io/effekseer-test/examples/filament/laser01/) | [Link](https://cx20.github.io/effekseer-test/examples/filament/laser02/) | [Link](https://cx20.github.io/effekseer-test/examples/filament/simple_ring_shape1/) | [Link](https://cx20.github.io/effekseer-test/examples/filament/block/) |
 
 ## Complex Samples
 
@@ -42,4 +44,4 @@ Each complex sample loads all four effects and provides a dedicated play button 
 | Rhodonite (WebGPU)   | [Link](https://cx20.github.io/effekseer-test/examples/rhodonite-webgpu/complex/) |
 | PlayCanvas (WebGL)   | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas/complex/) |
 | PlayCanvas (WebGPU)  | [Link](https://cx20.github.io/effekseer-test/examples/playcanvas-webgpu/complex/) |
-| Filament (WebGL)     | [Link](https://cx20.github.io/effekseer-test/examples/filament/complex/) |
+| Filament (WebGL) 🚧  | [Link](https://cx20.github.io/effekseer-test/examples/filament/complex/) |
